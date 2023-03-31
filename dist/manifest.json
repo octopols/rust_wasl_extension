@@ -7,6 +7,9 @@
       "default_title": "Click Me",
       "default_popup": "index.html"  
     },
+    "content_security_policy": {
+      "extension_pages": "default-src 'self' 'wasm-unsafe-eval'"
+    },
     "permissions": [
         "activeTab"
       ],
