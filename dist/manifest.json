@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "rust wasm console log",
+    "version": "1.0",
+    "description": "extension to log to console using rust wasm",
+    "action": {
+      "default_title": "Click Me",
+      "default_popup": "index.html"  
+    },
+    "permissions": [
+        "activeTab"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "index.js"
+          ]
+        }
+      ]
+  }
+  

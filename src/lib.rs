@@ -30,7 +30,7 @@ extern "C" {
     fn log_many(a: &str, b: &str);
 }
 
-fn bare_bones() {
+pub fn bare_bones() {
     log("Hello from Rust!");
     log_u32(42);
     log_many("Logging", "many values!");
